@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectIlosion", "projectIlosion\projectIlosion.csproj", "{7666D3B1-FA7C-4ABB-953C-58001E72512B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7666D3B1-FA7C-4ABB-953C-58001E72512B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7666D3B1-FA7C-4ABB-953C-58001E72512B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7666D3B1-FA7C-4ABB-953C-58001E72512B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7666D3B1-FA7C-4ABB-953C-58001E72512B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0A81A3B-3D47-4D78-9F5E-C684C9A5ECC7}
+	EndGlobalSection
+EndGlobal
