@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -90,13 +91,34 @@ namespace projectIlosion
             }
         }
 
-        private void NextButton_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
+            String lastname = LastName.Text;
+            String firstname = FirstName.Text;
+            String patronymic = Patronymic.Text;
+            String age = AgeBox.Text;
+            String gender = GenderBox.Text;
+
+            DB db = new DB();
+
+            MySqlCommand command = new MySqlCommand("INSERT INTO `useres` (`LastName`, `FirstName`, `Patronymic`, `Age`, `Gender`) " +
+                "VALUES (@LN, @FN, @Pt, @Ag, @Gd);", db.getConnection());
+
+            command.Parameters.Add("@LN", MySqlDbType.VarChar).Value = lastname;
+            command.Parameters.Add("@FN", MySqlDbType.VarChar).Value = firstname;
+            command.Parameters.Add("@Pt", MySqlDbType.VarChar).Value = patronymic;
+            command.Parameters.Add("@Ag", MySqlDbType.VarChar).Value = age;
+            command.Parameters.Add("@Gd", MySqlDbType.VarChar).Value = gender;
+
+            db.openConnection();
+
+            command.ExecuteNonQuery();
+
+            db.closeConnection();
+
             this.Hide();
             ChooseIllusion f2 = new ChooseIllusion();
             f2.ShowDialog();
-
         }
-
     }
 }

@@ -77,6 +77,11 @@ namespace projectIlosion
             lastpoint = new Point(e.X, e.Y);
         }
 
-
+        private void circlesbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            circlesForm f2 = new circlesForm();
+            f2.ShowDialog();
+        }
     }
 }

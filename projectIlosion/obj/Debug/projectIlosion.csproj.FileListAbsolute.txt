@@ -26,3 +26,4 @@ E:\Project\2\Keqing\1\projectIlosion\bin\Debug\System.Numerics.Vectors.dll
 E:\Project\2\Keqing\1\projectIlosion\bin\Debug\System.Buffers.dll
 E:\Project\2\Keqing\1\projectIlosion\bin\Debug\MySql.Data.xml
 E:\Project\2\Keqing\1\projectIlosion\obj\Debug\projectI.38995039.Up2Date
+E:\Project\2\Keqing\1\projectIlosion\obj\Debug\projectIlosion.circlesForm.resources

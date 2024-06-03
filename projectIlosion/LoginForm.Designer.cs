@@ -34,7 +34,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AgeBox = new System.Windows.Forms.ComboBox();
-            this.NextButton = new System.Windows.Forms.Button();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.GenderBox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -66,7 +66,7 @@
             this.paneldown.Controls.Add(this.pictureBox2);
             this.paneldown.Controls.Add(this.pictureBox1);
             this.paneldown.Controls.Add(this.AgeBox);
-            this.paneldown.Controls.Add(this.NextButton);
+            this.paneldown.Controls.Add(this.LoginButton);
             this.paneldown.Controls.Add(this.GenderBox);
             this.paneldown.Controls.Add(this.label5);
             this.paneldown.Controls.Add(this.label4);
@@ -141,20 +141,20 @@
             this.AgeBox.Size = new System.Drawing.Size(121, 24);
             this.AgeBox.TabIndex = 13;
             // 
-            // NextButton
+            // LoginButton
             // 
-            this.NextButton.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.NextButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NextButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
-            this.NextButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NextButton.Location = new System.Drawing.Point(335, 508);
-            this.NextButton.Name = "NextButton";
-            this.NextButton.Size = new System.Drawing.Size(204, 51);
-            this.NextButton.TabIndex = 12;
-            this.NextButton.Text = "Войти";
-            this.NextButton.UseVisualStyleBackColor = true;
-            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
+            this.LoginButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
+            this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LoginButton.Location = new System.Drawing.Point(335, 508);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(204, 51);
+            this.LoginButton.TabIndex = 12;
+            this.LoginButton.Text = "Войти";
+            this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // GenderBox
             // 
@@ -368,7 +368,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox FirstName;
         private System.Windows.Forms.ComboBox GenderBox;
-        private System.Windows.Forms.Button NextButton;
+        private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.ComboBox AgeBox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;

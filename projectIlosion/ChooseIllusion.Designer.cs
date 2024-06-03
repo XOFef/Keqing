@@ -29,24 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.circlesbutton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Expand = new System.Windows.Forms.Button();
             this.CloseButton = new System.Windows.Forms.Button();
             this.Curtail = new System.Windows.Forms.Button();
             this.labelup = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(155)))), ((int)(((byte)(217)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.circlesbutton);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -57,6 +63,28 @@
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = global::projectIlosion.Properties.Resources.keqing1;
+            this.pictureBox2.Location = new System.Drawing.Point(636, 155);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(233, 406);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox1.Image = global::projectIlosion.Properties.Resources.kek;
+            this.pictureBox1.Location = new System.Drawing.Point(44, 155);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(233, 406);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // button3
             // 
             this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -65,7 +93,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(288, 431);
+            this.button3.Location = new System.Drawing.Point(305, 461);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(300, 100);
             this.button3.TabIndex = 3;
@@ -80,27 +108,28 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(288, 280);
+            this.button2.Location = new System.Drawing.Point(305, 310);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(300, 100);
             this.button2.TabIndex = 2;
             this.button2.Text = "Вертикально-горизонтальная иллюзия.";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // circlesbutton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(288, 125);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(300, 100);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Иллюзия расстояния между краями окружностей ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.circlesbutton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.circlesbutton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circlesbutton.FlatAppearance.BorderSize = 3;
+            this.circlesbutton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(132)))), ((int)(((byte)(160)))));
+            this.circlesbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circlesbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.circlesbutton.Location = new System.Drawing.Point(305, 155);
+            this.circlesbutton.Name = "circlesbutton";
+            this.circlesbutton.Size = new System.Drawing.Size(300, 100);
+            this.circlesbutton.TabIndex = 1;
+            this.circlesbutton.Text = "Иллюзия расстояния между краями окружностей ";
+            this.circlesbutton.UseVisualStyleBackColor = true;
+            this.circlesbutton.Click += new System.EventHandler(this.circlesbutton_Click);
             // 
             // panel2
             // 
@@ -179,6 +208,8 @@
             this.Name = "ChooseIllusion";
             this.Text = "ChooseIllusion";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -194,6 +225,8 @@
         private System.Windows.Forms.Button Expand;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button circlesbutton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

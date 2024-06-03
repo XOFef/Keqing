@@ -93,9 +93,39 @@ namespace projectIlosion.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kek {
+            get {
+                object obj = ResourceManager.GetObject("kek", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap keka {
             get {
                 object obj = ResourceManager.GetObject("keka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap keqing {
+            get {
+                object obj = ResourceManager.GetObject("keqing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap keqing1 {
+            get {
+                object obj = ResourceManager.GetObject("keqing1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
