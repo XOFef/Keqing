@@ -99,22 +99,22 @@ namespace projectIlosion
             String age = AgeBox.Text;
             String gender = GenderBox.Text;
 
-            DB db = new DB();
+            //DB db = new DB();
 
-            MySqlCommand command = new MySqlCommand("INSERT INTO `useres` (`LastName`, `FirstName`, `Patronymic`, `Age`, `Gender`) " +
-                "VALUES (@LN, @FN, @Pt, @Ag, @Gd);", db.getConnection());
+            //MySqlCommand command = new MySqlCommand("INSERT INTO `useres` (`LastName`, `FirstName`, `Patronymic`, `Age`, `Gender`) " +
+            //    "VALUES (@LN, @FN, @Pt, @Ag, @Gd);", db.getConnection());
 
-            command.Parameters.Add("@LN", MySqlDbType.VarChar).Value = lastname;
-            command.Parameters.Add("@FN", MySqlDbType.VarChar).Value = firstname;
-            command.Parameters.Add("@Pt", MySqlDbType.VarChar).Value = patronymic;
-            command.Parameters.Add("@Ag", MySqlDbType.VarChar).Value = age;
-            command.Parameters.Add("@Gd", MySqlDbType.VarChar).Value = gender;
+            //command.Parameters.Add("@LN", MySqlDbType.VarChar).Value = lastname;
+            //command.Parameters.Add("@FN", MySqlDbType.VarChar).Value = firstname;
+            //command.Parameters.Add("@Pt", MySqlDbType.VarChar).Value = patronymic;
+            //command.Parameters.Add("@Ag", MySqlDbType.VarChar).Value = age;
+            //command.Parameters.Add("@Gd", MySqlDbType.VarChar).Value = gender;
 
-            db.openConnection();
+            //db.openConnection();
 
-            command.ExecuteNonQuery();
+            //command.ExecuteNonQuery();
 
-            db.closeConnection();
+            //db.closeConnection();
 
             this.Hide();
             ChooseIllusion f2 = new ChooseIllusion();
