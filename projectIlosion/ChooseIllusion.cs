@@ -83,5 +83,12 @@ namespace projectIlosion
             circlesForm f2 = new circlesForm();
             f2.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            VerticalHorizontalIllusion f2 = new VerticalHorizontalIllusion();
+            f2.ShowDialog();
+        }
     }
 }

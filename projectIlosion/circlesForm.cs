@@ -47,7 +47,7 @@ namespace projectIlosion
         }
 
 
-        private static bool MAXIMIZED = false;
+        private static bool MAXIMIZED = true;
 
         private void Expand_Click(object sender, EventArgs e)
         {
@@ -122,11 +122,9 @@ namespace projectIlosion
             this.Invalidate();
         }
 
+        private void circlesForm_Load(object sender, EventArgs e)
+        {
 
-      
-
-
-
-
+        }
     }
 }

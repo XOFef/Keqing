@@ -141,6 +141,7 @@
             this.KeyPreview = true;
             this.Name = "circlesForm";
             this.Text = "circlesForm";
+            this.Load += new System.EventHandler(this.circlesForm_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.circlesForm_Paint);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
