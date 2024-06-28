@@ -15,10 +15,10 @@ namespace projectIlosion
     {
         Image Ball;
         int speed = 1;
-        int positionX = 600;
+        int positionX = 1000;
         int height = 75;
         int width = 150;
-        int Sref = 450 - 350 + 300;
+        int Sref = (int)Math.Sqrt(Math.Pow(850 - 750, 2) + Math.Pow(350 - 350, 2));
         public circlesForm()
         {
             InitializeComponent();
@@ -30,10 +30,10 @@ namespace projectIlosion
         {
 
             Graphics ball1 = e.Graphics;
-            ball1.DrawImage(Ball, 350, 350, 150, 75);
+            ball1.DrawImage(Ball, 750, 350, 150, 75);
 
             Graphics ball2 = e.Graphics;
-            ball2.DrawImage(Ball, 450, 350, 150, 75);
+            ball2.DrawImage(Ball, 850, 350, 150, 75);
 
             Graphics scrollball = e.Graphics;
             scrollball.DrawImage(Ball, positionX, 350, width, height);
@@ -95,21 +95,26 @@ namespace projectIlosion
 
         public void button3_Click(object sender, EventArgs e)
         {
-            int Stest = (450 - positionX) * (-1);
-            int result = Sref - Stest - 100;
+           
+            int Stest = Math.Max(0, (int)Math.Sqrt(Math.Pow(positionX - 850, 2) + Math.Pow(350 - 350, 2)) - (55 + 55)) ; 
+            int result = Sref - Stest ;
  
             MessageBox.Show($"Ошибка: {result}");
+
+            this.Hide();
+            ChooseIllusion f2 = new ChooseIllusion();
+            f2.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            positionX--;
+            positionX-=10;
         }
 
 
         private void button2_Click(object sender, EventArgs e)
         {
-            positionX++;
+            positionX+= 10;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
